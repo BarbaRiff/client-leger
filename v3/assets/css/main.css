@@ -1,0 +1,265 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #E5E5E5;
+	/* display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	margin: -20px 0 50px; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.titleError {
+    position: absolute;
+    left: 30%;
+    /* width: 100%; */
+    font-family: 'Baloo Bhai';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #0C0B0B;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F5F5F7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0C0B0B;
+}
+
+.navbar-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    border-radius: 20px;
+    background-color: black;
+    color:  #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.search {
+    position: relative;
+    min-width: fit-content;
+    border-radius: 8px;
+    background-color: #F5F5F7;
+}
+
+.search i {
+    margin-left: 10px;
+    margin-right: 8px;
+    border: none;
+    color: #0C0B0B;
+    background-color: transparent;
+}
+
+.search input {
+    /* position: relative; */
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 24px;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.navbar-container ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: fit-content;
+}
+
+.navbar-container ul li {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35px;
+}
+
+.logo {
+    font-family: 'Baloo Bhai';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 57px;
+}
+
+.main-container {
+    position: relative;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, minmax(100px, auto));
+    column-gap: 1%;
+    row-gap: 28%;
+    width: 100%;
+}
+
+.main-container .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: fit-content;
+    background-color: #F5F5F7;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.main-container .item .item-img {
+    position: relative;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+.main-container .item .item-img img {
+    position: relative;
+    top: 10%;
+    width: 70%;
+    height: 80%;
+    border-radius: 12px;
+}
+
+.main-container .item-info h2 {
+    font-family: 'Baloo Bhai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 26px;
+}
+
+.main-container .item-info p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.main-container input {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0C0B0B;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.main-container input:hover {
+    color: #0C0B0B;
+    background-color: transparent;
+    border: 2px solid #0C0B0B;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 780px) {
+    .logo {
+        font-weight: 10;
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+
+table{
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: bisque;
+    height: 30px;
+}
+
+tr,td{
+    border: 1px solid red;
+    padding: 3px;
+}
+
+tr:hover{
+    background-color: black;
+    color: white;
+}
+/* Ajoutez ces styles à votre fichier CSS */
+
+/* Ajoutez ces styles à votre fichier CSS */
+
+.btn-nav {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #007bff; /* Couleur bleue */
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #0056b3; /* Couleur bleue plus foncée au survol */
+}
+/* Ajoutez ces styles à votre fichier CSS */
+
+.btn-nav {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 12px;
+    background-color: #E5E5E5; /* Couleur bleue */
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #0056b3; /* Couleur bleue plus foncée au survol */
+}
+
+/* Autres styles CSS existants */
